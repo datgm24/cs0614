@@ -4,7 +4,7 @@ namespace cs0614
     {
         static Random random = new Random();
         int[] vx = new int[3];
-        int []vy = new int[3];
+        int[] vy = new int[3];
 
         public Form1()
         {
@@ -27,7 +27,7 @@ namespace cs0614
             {
                 vx[0] = Math.Abs(vx[0]);
             }
-            else if (label1.Left > (ClientSize.Width-label1.Width))
+            else if (label1.Left > (ClientSize.Width - label1.Width))
             {
                 vx[0] = -Math.Abs(vx[0]);
             }
@@ -82,6 +82,14 @@ namespace cs0614
                 vy[2] = -Math.Abs(vy[2]);
             }
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            for(int i = 0 ; i<10 ; i++)
+            {
+                MessageBox.Show($"{i}");
+            }
         }
     }
 }
